@@ -2,8 +2,8 @@
 
 ### `npm install`
 
-cd to client and npm install
-cd to server and npm install
+cd client && npm install
+cd server && npm install
 
 ### `npm run client`
 

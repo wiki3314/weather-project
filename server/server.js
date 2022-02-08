@@ -58,12 +58,12 @@ const startServer = async () => {
   });
   console.log("mongoose connected.....");
 
-  // cron.schedule("1 * * * * *", () => {
-  // console.log("running a task every minute");
-  // getWeatherAndUpdateDb(city, appId).then((weather) => {
-  //   console.log(weather);
-  // });
-  // });
+  cron.schedule("1 * * * * *", () => {
+    console.log("running a task every minute");
+    getWeatherAndUpdateDb(city, appId).then((weather) => {
+      console.log(weather);
+    });
+  });
   app.listen(4000, () => {
     console.log("Server is running on port 4000");
   });

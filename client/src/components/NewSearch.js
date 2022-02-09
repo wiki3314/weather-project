@@ -14,6 +14,7 @@ export default function Search({ searchCity }) {
     setCurrentCity(value);
     setTimeout(() => {
       setSearch(true);
+      setCurrentCity("");
     }, 3000);
   }
 
